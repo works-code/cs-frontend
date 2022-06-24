@@ -32,11 +32,11 @@ npm install --save axios
 ```
 npm install --save vue-router
 ```
-### 어플리케이션 실행
+#### 어플리케이션 실행
 ```
 npm run serve
 ```
-### 데이터 조회 및 처리를 위해 API 서버 기동
+#### 데이터 조회 및 처리를 위해 API 서버 기동
 [API 서버 GIT](https://github.com/works-code/cs-backend)
 
 ### 어플리케이션 이용 방법
