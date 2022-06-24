@@ -78,5 +78,24 @@ beforeRouteLeave (to, from, next) {
 ```
 - 상담사 지정
 > 이미 상담사 지정된 글일시 API 서버에서 false로 응답이 오며, false 일시 alert 을 통해 안내 하도록 하였습니다.
+```js
+this.$axios.post(this.$serverIP+'/inquiry/set/counselor',this.requestBody
+                ).then((res) => {
+                    if (res.data == false){
+                        alert("이미 담당자가 지정된 문의건이거나 서버 이슈로 실패 하였습니다.");
+                        return false;
+                    }
+                    this.fnGetList()
+                })
+```
 - 답변
 > 상담사 ID 에 지정된 상담사 ID 정보가 있고 본인 ID 와 동일할시 답변 버튼을 활성화 하도록 하였습니다.
+```js
+<td v-if="counselorId == username">
+                <button @click="fnRegister(seq)">작성</button>
+            </td>
+            <td v-else-if="counselorId == null">
+                상담사 지정후 가능
+            </td>
+            <td v-else>작성불가능</td>
+```
