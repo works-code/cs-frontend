@@ -38,7 +38,7 @@ npm run serve
 ```
 #### 데이터 조회 및 처리를 위해 API 서버 기동
 - [API 서버 GIT](https://github.com/works-code/cs-backend)
-### 어플리케이션 이용 방법
+### 이용 가이드
 #### 1. [메인 페이지](http://localhost:8081) 접속
 #### 2. 고객, 상담사 사용 페이지 접속
 #### - 고객 사용 페이지
