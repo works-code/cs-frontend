@@ -66,11 +66,11 @@ npm run serve
 > 로그인 완료시 쿠키에 회원 아이디를 저장하였으며 로그아웃시 쿠키에서 제거 하였습니다.
 - 미답변 문의글 조회
 > interval 기능을 이용하여 10초마다 미답변 문의글이 갱신 되도록 하였습니다.
-```vue
+```js
 this.interval = setInterval(this.fnGetList, 10000)
 ```
 > 해당 기능은 페이지 벗이났을시에도 동작 하므로 벗어났을시 갱신 작업을 하지 않도록 하기 위해 아래와 같이 처리 하였습니다.
-```vue
+```js
 beforeRouteLeave (to, from, next) {
             clearInterval(this.interval)
             next()
