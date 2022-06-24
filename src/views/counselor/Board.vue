@@ -34,7 +34,7 @@
             <td v-else-if="counselorId == null">
                 상담사 지정후 가능
             </td>
-            <td v-else>작성불가능</td>
+            <td v-else>작성 불가능</td>
         </tr>
         <tr v-else>
             <td colspan="7">데이터가 없습니다.</td>

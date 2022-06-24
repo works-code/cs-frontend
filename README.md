@@ -92,7 +92,7 @@ this.$axios.post(this.$serverIP+'/inquiry/set/counselor',this.requestBody
 > 상담사 ID 에 지정된 상담사 ID 정보가 있고 본인 ID 와 동일할시 답변 버튼을 활성화 하도록 하였습니다.
 ```html
 <td v-if="counselorId == username">
-    <button @click="fnRegister(seq)">작성</button>
+    <button @click="fnRegister(seq)"> 작성 </button>
 </td>
 
 <td v-else-if="counselorId == null">
@@ -100,6 +100,6 @@ this.$axios.post(this.$serverIP+'/inquiry/set/counselor',this.requestBody
 </td>
 
 <td v-else>
-    작성불가능
+    작성 불가능
 </td>
 ```
