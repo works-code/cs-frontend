@@ -94,9 +94,11 @@ this.$axios.post(this.$serverIP+'/inquiry/set/counselor',this.requestBody
 <td v-if="counselorId == username">
     <button @click="fnRegister(seq)">작성</button>
 </td>
+
 <td v-else-if="counselorId == null">
     상담사 지정후 가능
 </td>
+
 <td v-else>
     작성불가능
 </td>
